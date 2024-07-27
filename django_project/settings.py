@@ -55,7 +55,7 @@ ROOT_URLCONF = 'django_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,6 +120,10 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
+
+# Login / Logout redirect
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
 
 CSRF_TRUSTED_ORIGINS = ["https://8000-idx-django-newspaper-1721949353900.cluster-duylic2g3fbzerqpzxxbw6helm.cloudworkstations.dev"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
