@@ -1,3 +1,9 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# Newspaper App
+Simple app made to practice django
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+## Tech
+
+- Python
+- Django
+- Bootstrap
+- Flake8
