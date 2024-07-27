@@ -7,3 +7,4 @@ Simple app made to practice django
 - Django
 - Bootstrap
 - Flake8
+- django-crispy-forms

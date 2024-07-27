@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 3rd prarty
+    'crispy_forms',
+    'crispy_bootstrap5',
+    # local
     'accounts.apps.AccountsConfig',
     'pages.apps.PagesConfig',
 ]
@@ -129,3 +133,7 @@ LOGOUT_REDIRECT_URL = 'home'
 CSRF_TRUSTED_ORIGINS = ["https://8000-idx-django-newspaper-1721949353900.cluster-duylic2g3fbzerqpzxxbw6helm.cloudworkstations.dev"]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = "accounts.CustomUser"
+
+# 3rd party conf
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
